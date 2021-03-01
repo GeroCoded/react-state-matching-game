@@ -10,7 +10,7 @@ const Tile = ({ color, id, handleTileClicked, matched, selected, svg: Svg }) => 
   } : null;
 
   return (
-    <div className='Tile' style={dynamicColor}>
+    <div className='Tile' style={dynamicColor} onClick={() => { handleTileClicked(id, color)}} >
       { matchedOrSelected ? <Svg /> : null }
     </div>
   )
