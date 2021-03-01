@@ -3,10 +3,10 @@ import React from 'react'
 import Button from '../Button'
 import TileSelector from '../TileSelector'
 
-const OptionsPanel = () => (
+const OptionsPanel = ({ playing, numTiles, startGame }) => (
   <div>
-    <TileSelector />
-    <Button />
+    <TileSelector playing={playing} numTiles={numTiles} />
+    <Button startGame={startGame} playing={playing} />
   </div>
 )
   
